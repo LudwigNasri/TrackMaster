@@ -5,8 +5,10 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Shipment from './Pages/shipment.jsx'
 import Users from './Pages/User.jsx'
-import Overview from './components/overview.jsx'
-import Dashboard from './components/Dashboard.jsx'
+import Dashboard from './components/admin/Dashboard.jsx'
+import HomePage from './Pages/HomePage.jsx'
+import UserTracking from './Pages/UserTracking.jsx'
+import Overview from "./Pages/overview.jsx"
 
 const router = createBrowserRouter([
   {
@@ -15,15 +17,29 @@ const router = createBrowserRouter([
     children : [
       {
         path : '/',
-        element: <Overview />
+        element: <HomePage /> 
       },
       {
-        path : '/shipment',
-        element: <Shipment />
+        path: "/tracking",
+        element : <UserTracking />
       },
       {
-        path : '/users',
-        element: <Users />
+        path: "/AdminDashboard",
+        element : <Dashboard />,
+        children : [
+          {
+            path : "overview",
+            element : <Overview />
+          },
+          {
+            path : "shipment",
+            element : <Shipment />
+          },
+          {
+            path : "users",
+            element : <Users />
+          }
+        ]
       }
     ]
   }

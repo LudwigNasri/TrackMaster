@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { BarChartData } from "./Barchart";
+import { BarChartData } from "../data/Barchart";
 import { Bar, Line } from 'react-chartjs-2';
 import DummyData from '../data/dummy';
 import "leaflet/dist/leaflet.css"

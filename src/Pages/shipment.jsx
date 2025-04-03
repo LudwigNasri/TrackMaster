@@ -2,7 +2,7 @@ import React from 'react'
 import  { registerLicense } from '@syncfusion/ej2-base'
 import { ColumnDirective, GridComponent, ColumnsDirective, queryCellInfo, Column, Inject, Page } from '@syncfusion/ej2-react-grids'
 import DummyData from '../data/dummy'
-import PageHead from '../components/PageHead'
+import PageHead from '../components/admin/PageHead'
 import { getValue } from '@syncfusion/ej2-base'
 
 

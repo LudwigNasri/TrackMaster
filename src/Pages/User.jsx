@@ -1,7 +1,7 @@
 import React from 'react'
 import * as yup from 'yup'
 import { Formik } from 'formik'
-import PageHead from '../components/PageHead'
+import PageHead from '../components/admin/PageHead'
 
 function Users() {
 
